@@ -37,7 +37,7 @@ io.on("connection", (socket) => {
             callee: user,
             sdpAnswer: sdpAnswer,
         });
-        console.log(socket.user, callerId, "Call Answered");
+        console.log(user, callerId, "Call Answered");
     });
 
     socket.on("IceCandidate", (data) => {

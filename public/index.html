@@ -11,9 +11,12 @@
         <video id="localVideo" autoplay muted></video>
         <video id="remoteVideo" autoplay></video>
     </div>
+    <!-- Inside your <body> tag -->
+    <button id="webcamBtn">Start Webcam</button>
+    <text id="yourId"></text>
     <input type="text" id="calleeIdInput" placeholder="Callee ID">
     <button id="callBtn">Call</button>
-    <button id="answerBtn">Answer</button>
+
 
     <!-- Load the Socket.io client library -->
     <script src="/socket.io/socket.io.js"></script>
