@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Simple WebRTC Video Call</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+    <div id="videoContainer">
+        <video id="localVideo" autoplay muted></video>
+        <video id="remoteVideo" autoplay></video>
+    </div>
+    <input type="text" id="calleeIdInput" placeholder="Callee ID">
+    <button id="callBtn">Call</button>
+    <button id="answerBtn">Answer</button>
+
+    <!-- Load the Socket.io client library -->
+    <script src="/socket.io/socket.io.js"></script>
+    <!-- Load your custom client-side script -->
+    <script src="main.js"></script>
+</body>
+
+</html>
